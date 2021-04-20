@@ -1,0 +1,17 @@
+{
+  "name": "weblive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dicer": "^0.2.5",
+    "binary-extensions": "^2.2.0",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.0.1"
+  }
+}
