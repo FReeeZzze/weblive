@@ -92,7 +92,7 @@ function GstLaunch() {
 			var output = SpawnSync(
 					gst_launch_path,
 					[gst_launch_versionarg],
-					{ 'timeout' : 1000 })
+					{ 'timeout' : 500 })
 				.stdout;
 
 			if (output && output.toString().includes('GStreamer')) {
@@ -248,7 +248,7 @@ function SocketCamWrapper(
 	const Assert = require('assert');
 	const io = require('socket.io')({
 		cors: {
-			origin: "http://localhost:3000",
+			origin: "*",
 			methods: ["GET", "POST"],
 			allowedHeaders: ["my-custom-header"],
 			credentials: false
