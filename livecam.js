@@ -92,7 +92,7 @@ function GstLaunch() {
 			var output = SpawnSync(
 					gst_launch_path,
 					[gst_launch_versionarg],
-					{ 'timeout' : 500 })
+					{ 'timeout' : 1000 })
 				.stdout;
 
 			if (output && output.toString().includes('GStreamer')) {
